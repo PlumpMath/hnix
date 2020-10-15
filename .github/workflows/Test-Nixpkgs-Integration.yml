@@ -11,6 +11,6 @@ jobs:
     - name: Install Nix
       uses: cachix/install-nix-action@v10
     - name: "Test Haskell project int"
-      uses: Anton-Latukha/test-haskell-nixpkgs-integration-action@v0.5-alpha
+      uses: Anton-Latukha/test-haskell-nixpkgs-integration-action@v0.5.1-alpha
       shell: bash
 
