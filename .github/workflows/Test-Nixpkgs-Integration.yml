@@ -1,0 +1,13 @@
+name: "Test Nixpkgs integration"
+
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: "A job to say hello"
+    steps:
+    - uses: actions/checkout@v2
+    - name: "Test Haskell project int"
+      uses: Anton-Latukha/test-haskell-nixpkgs-integration-action@v0.5-alpha
+
