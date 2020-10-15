@@ -5,9 +5,12 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: "A job to say hello"
+    name: "Making a test"
     steps:
     - uses: actions/checkout@v2
+    - name: Install Nix
+      uses: cachix/install-nix-action@v10
     - name: "Test Haskell project int"
       uses: Anton-Latukha/test-haskell-nixpkgs-integration-action@v0.5-alpha
+      shell: bash
 
